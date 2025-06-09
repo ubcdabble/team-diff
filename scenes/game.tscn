@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpny84rxhf4qo"]
+
+[ext_resource type="PackedScene" uid="uid://cj63mnhpwts4x" path="res://scenes/dabble_character.tscn" id="1_uwrxv"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Dabble Character" parent="." instance=ExtResource("1_uwrxv")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -15)
+zoom = Vector2(4, 4)
