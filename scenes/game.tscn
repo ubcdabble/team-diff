@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpny84rxhf4qo"]
+[gd_scene load_steps=3 format=3 uid="uid://cpny84rxhf4qo"]
 
 [ext_resource type="PackedScene" uid="uid://cj63mnhpwts4x" path="res://scenes/dabble_character.tscn" id="1_uwrxv"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 
 [node name="Game" type="Node2D"]
 
@@ -9,3 +11,9 @@
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -15)
 zoom = Vector2(4, 4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 1)
+shape = SubResource("WorldBoundaryShape2D_uwrxv")

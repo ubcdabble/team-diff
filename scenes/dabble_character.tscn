@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cj63mnhpwts4x"]
+[gd_scene load_steps=15 format=3 uid="uid://cj63mnhpwts4x"]
 
 [ext_resource type="Texture2D" uid="uid://7icjyahfbu2r" path="res://assets/_Idle.png" id="1_4mla7"]
+[ext_resource type="Script" uid="uid://bw371e0n3xawf" path="res://scripts/dabble_character.gd" id="1_v3jrs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3jrs"]
 atlas = ExtResource("1_4mla7")
@@ -84,6 +85,7 @@ animations = [{
 size = Vector2(18, 37)
 
 [node name="Dabble Character" type="CharacterBody2D"]
+script = ExtResource("1_v3jrs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -40)
